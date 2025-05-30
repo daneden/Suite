@@ -26,7 +26,7 @@ struct DataTaskModifier: ViewModifier {
 }
 
 @available(iOS 17, watchOS 8, macOS 15, tvOS 15, *)
-extension View {
+public extension View {
 	/// Adds an asynchronous function to the view that is called upon refresh, scene phase change, and changes to any equatable values in an array of dependencies.
 	/// - Parameter action: An asynchronous handler called when the view first appears, when a refresh is requested, and when the app scene phase changes to active from any other state
 	/// - Returns: A view which will call `action` when it first appears, when a refresh is requested, and when the app scene phase changes to active.

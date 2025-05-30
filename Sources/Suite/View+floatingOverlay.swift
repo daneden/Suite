@@ -32,7 +32,7 @@ private struct FloatingOverlayModifier<OverlayContent: View>: ViewModifier {
 }
 
 @available(iOS 17, watchOS 10, macOS 15, tvOS 17, *)
-extension View {
+public extension View {
 	/// Layers the view that you specify in front of this view, with content margins applied to scrolling containers.
 	/// - Parameters:
 	///   - alignment: The alignment for the foreground content
