@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13, watchOS 6, macOS 15, tvOS 13, *)
+@available(iOS 13, watchOS 6, macOS 10.15, tvOS 13, *)
 public extension View {
 	/// Applies a given transformation inline. Useful for e.g. `#available` attribute-based content changes.
 	///
