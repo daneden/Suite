@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 17, watchOS 10, macOS 15, tvOS 17, *)
+@available(iOS 17, watchOS 10, macOS 14, tvOS 17, *)
 private struct FloatingOverlayModifier<OverlayContent: View>: ViewModifier {
 	@State private var size = CGSize.zero
 	
@@ -31,7 +31,7 @@ private struct FloatingOverlayModifier<OverlayContent: View>: ViewModifier {
 	}
 }
 
-@available(iOS 17, watchOS 10, macOS 15, tvOS 17, *)
+@available(iOS 17, watchOS 10, macOS 14, tvOS 17, *)
 public extension View {
 	/// Layers the view that you specify in front of this view, with content margins applied to scrolling containers.
 	/// - Parameters:

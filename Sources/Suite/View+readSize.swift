@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-@available(iOS 15, watchOS 8, macOS 15, tvOS 15, *)
+@available(iOS 15, watchOS 8, macOS 12, tvOS 15, *)
 struct ReadSizeViewModifier: ViewModifier {
 	@Binding var size: CGSize
 	
@@ -24,7 +24,7 @@ struct ReadSizeViewModifier: ViewModifier {
 	}
 }
 
-@available(iOS 15, watchOS 8, macOS 15, tvOS 15, *)
+@available(iOS 15, watchOS 8, macOS 12, tvOS 15, *)
 public extension View {
 	/// Reads the size of the target view and assigns its value to the passed binding. Changes to the view's size result in updates to the binding.
 	///
