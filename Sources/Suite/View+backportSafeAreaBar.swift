@@ -37,7 +37,7 @@ private struct FloatingOverlayModifier<OverlayContent: View>: ViewModifier {
 			.contentMargins(insetEdge, size.height, for: .automatic)
 			.overlay(alignment: resolvedAlignment) {
 				self.overlayContent
-					.padding(insetEdge, spacing)
+					.padding(insetEdge, spacing ?? 0)
 					.overlay {
 						GeometryReader { g in
 							Color.clear
