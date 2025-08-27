@@ -26,9 +26,9 @@ private struct FloatingOverlayModifier<OverlayContent: View>: ViewModifier {
 	
 	var resolvedAlignment: Alignment {
 		switch alignment {
-		case .leading: return .leading
-		case .trailing: return .trailing
-		default: return .center
+		case .leading: return edge == .top ? .topLeading : .bottomLeading
+		case .trailing: return edge == .top ? .topTrailing : .bottomTrailing
+		default: return edge == .top ? .top : .bottom
 		}
 	}
 	
