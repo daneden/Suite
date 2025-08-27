@@ -64,7 +64,7 @@ public extension View {
 		@ViewBuilder content: () -> OverlayContent
 	) -> some View {
 		if #available(iOS 26, macOS 26, visionOS 26, watchOS 26, *) {
-			return safeAreaBar(edge: edge, alignment: alignment) {
+			return safeAreaBar(edge: edge, alignment: alignment, spacing: spacing) {
 				content()
 			}
 		} else {
